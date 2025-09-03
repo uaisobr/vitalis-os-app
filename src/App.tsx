@@ -7,6 +7,9 @@ import { Layout } from "./components/layout/Layout";
 import Dashboard from "./pages/Dashboard";
 import Patients from "./pages/Patients";
 import PatientDetail from "./pages/PatientDetail";
+import MealPlans from "./pages/MealPlans";
+import Library from "./pages/Library";
+import Financial from "./pages/Financial";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 
@@ -25,9 +28,9 @@ const App = () => (
             <Route path="appointments" element={<Dashboard />} />
             <Route path="patients" element={<Patients />} />
             <Route path="patients/:id" element={<PatientDetail />} />
-            <Route path="meal-plans" element={<Dashboard />} />
-            <Route path="library" element={<Dashboard />} />
-            <Route path="financial" element={<Dashboard />} />
+            <Route path="meal-plans" element={<MealPlans />} />
+            <Route path="library" element={<Library />} />
+            <Route path="financial" element={<Financial />} />
             <Route path="settings" element={<Dashboard />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
